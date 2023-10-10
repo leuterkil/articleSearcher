@@ -1,0 +1,95 @@
+.card{
+    width: 525px;
+    height: 250px;
+   background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(242,245,248,1) 35%, rgba(236,236,237,1) 100%);
+    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 30px;
+    transition: background-color .5s, box-shadow .5s, margin-left .5s;
+    &:hover{
+        margin-left: 8%;
+        background-color: #ffff;
+        box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
+        transition: background-color .5s, box-shadow .5s, margin-left .5s;
+    }
+  }
+.post{
+    &-image{
+        width: 200px;
+        height: 220px;
+        margin-top: 15px;
+        margin-left: 15px;
+        border-radius: 10px 10px 10px;
+        float: left;
+      }
+      &-content{
+        width: 55%;
+        height: 250px;
+        float: left;
+        margin-left: 5px;
+        overflow: hidden;
+      }
+    
+      &-header{
+        font-size: 28px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 15px;
+        color: #3B3C3F;
+        margin-left: 10px;
+        text-align: center;
+      }
+      &-text{
+        font-size: 15px;
+        padding-left: 20px;
+        color: #768CA4;
+        font-family: 'Roboto', sans-serif;
+        
+      }
+}
+  .author{
+    width: 100%;
+    height: 60px;
+    background-color: #F2F5F8;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    &-content{
+        width: 60%;
+        height: 60px;
+        margin-left: 10px;
+        
+        float: left;
+      }
+      &-image{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        float: left;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      &-name{
+        font-size: 20px;
+        color: #3B3C3F;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        margin-top: 10px;
+        padding-left: 10px;
+      }
+  }
+
+  .date{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -15px;
+    padding-left: 10px;
+  }
+
+  a:link{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #3B3C3F;
+    text-decoration: none;
+  }

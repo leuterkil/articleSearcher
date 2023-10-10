@@ -1,0 +1,65 @@
+$displays:flex,none,block,inline;
+
+$justifies:center,space-between,start,space-around,space-evenly,end;
+$aligns:center,start,strech,end;
+
+$radius:(
+    pill:50px
+);
+
+.d{
+    @each $displayName in $displays{
+        &-#{$displayName}{
+            display: $displayName;
+        }
+    }
+}
+
+.justify{
+    @each $justify in $justifies{
+        &-#{$justify}{
+            justify-content: $justify;
+        }
+    } 
+}
+
+.items{
+    @each $align in $aligns{
+        &-#{$align}{
+            align-items: $align;
+        }
+    }
+}
+
+.w{
+    @for $i from 1 through 100{
+        &-#{$i}{
+            width: $i+"%";
+            &-vw{
+                width: $i+"vw";
+            }
+        }
+    }
+}
+.h{
+    @for $i from 1 through 100{
+        &-#{$i}{
+            height: #{$i+"%"};
+            &-vh{
+                height: #{$i+"vh"};
+            }
+        }
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.radius{
+    @each $key,$value in $radius{
+        &-#{$key}{
+            border-radius: $value;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<div class="card" *ngIf="article">
+    <div class="post">
+      <img class="post-image" src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"/>
+      
+      <div class="post-content">
+        <p class="post-header"> <a href="#">{{article.title}}</a> </p>
+        <p class="post-text">
+          {{article.content}}
+        </p>
+        <div class="author">
+          <div class="author-content">
+            <p class="author-name">{{article.author}}</p>
+            <p class="date">{{article.published_date | date:"dd/MM/Y"}}</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
